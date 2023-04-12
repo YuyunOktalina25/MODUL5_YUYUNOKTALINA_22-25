@@ -1,0 +1,135 @@
+                                                             <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- UNTUK MENAMPILKANicon -->
+    <link rel="icon" href="" />  
+    <title>PRAKTIKUM BOOSTRAP</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar" style="background-color: blue;">
+      <div class="container-fluid">
+        <div> 
+          <!-- untuk brand di navbar -->
+          <span class="navbar-brand mb-0 h1">PBW </span>
+          <a class="navbar-brand" href="#">Selamat datang di website Yuyun Oasis haii semuaaaa</a>
+        </div>
+        <!-- target = -->
+        <!-- button bisa terpanggil garis tiganya karna ada yang dibawahhnya ada tagar yang akan dipanggil di button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Praktikum PBW A
+            </h5>
+            <!-- untuk tombol silang -->
+            <!-- data bs dismis unutk menghilangkan fungsi silangnya  -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- a untuk membuat link -->
+          <!-- ini adalah body dari garis tiga -->
+          <div class="offcanvas-body position-relative">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Daftar Mahasiswa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Informasi Tugas</a>
+              </li>
+            </ul>
+            <div class="tombol position-absolute bottom-0 start-50">
+              <a class="btn btn-danger d-grid gap-2" href="#" role="button" 
+                >Logout</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end header -->
+
+    <!-- content -->
+    <!-- row dam col berfungsi unutk mengatur kolom -->
+    <!-- widht unutk mengatur pajang -->
+    <section class="mt-1">
+      <div class="content position-relative" style="padding-top: 50px">
+        <div class="row">
+          <h2 class="text-center">
+            WEBSITE PRAKTIKUM PEMROGRAMAN BERBASIS WEB
+          </h2>
+        </div>
+        <div class="row align-items-center mt-4">
+          <div class="col-4">
+            <!-- mt untu mengatur margin kanan kiri untuk kartu -->
+            <!-- card mx auto yaitu untuk mengatur  margin antara kartu -->
+            <div class="card mx-auto" style="width: 85%">
+              <img src="image/left.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">SYIHAB PRANOWOW</h5>
+                <p class="card-text">
+                  Haloo perkenalkan nama saya Syihab saya berasal dari prodi teknik industri angkatan 22
+                  saya berasal dari Gresik saya bergabung dengan LPM SAINT sebagai CO litbang
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card mx-auto" style="width: 85%">
+              <img src="image/mid.png" class="card-img-top" alt="..."" />
+              <div class="card-body">
+                <h5 class="card-title"> AHMAD FAHMI</h5>
+                <p class="card-text">
+                  halo perkenalkan nama saya FAHMI saya berasal dari prodi teknik informatika angakatan 19 saya 
+                  berasal dari Lamongan saya bergabung dengan LPM SAINT sebagai pemimpin redaksi 
+          
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card mx-auto" style="width: 85%">
+              <img src="image/right.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">FUAD AMIREN</h5>
+                <p class="card-text">
+                  Halo perkenalkan nama saya Amiren saya berasal dari prodi teknik mekatro angkatan 21, saya berasal
+                  dari Pamekasan saya begabung dengan LPM SAINT sebagai redaksi pelaksana
+                
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end content -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+ 
